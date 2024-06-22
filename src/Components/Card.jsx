@@ -13,13 +13,12 @@ const Card = ({ dentist }) => {
 
   return (
     <div className="card">
-      {/* Mostrar el nombre, username y el id */}
       <h3>{name}</h3>
       <p>Username: {username}</p>
       <button onClick={addFav} className="favButton">
         Add fav
       </button>
-      {/* Link hacia la página de detalle */}
+      
       <Link to={`/dentist/${id}`}>View Details</Link>
     </div>
   );
